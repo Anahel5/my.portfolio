@@ -25,12 +25,15 @@ body {
   border-radius: 15px;
   margin-bottom: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -56,6 +59,41 @@ body {
   color: #667eea;
 }
 
+/* Mobile Header Hamburger Menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  padding: 0;
+}
+
+.hamburger {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
 .section {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -77,25 +115,6 @@ footer {
   padding: 2rem;
   color: white;
   margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .navlinks {
-    gap: 1rem;
-  }
-  
-  .section {
-    padding: 2rem 1rem;
-  }
-  
-  .section h2 {
-    font-size: 2rem;
-  }
 }
 
 html {
@@ -445,80 +464,6 @@ html {
   transform: translateY(0);
 }
 
-/* Responsive design */
-@media (max-width: 968px) {
-  .home-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .profile-image-container {
-    width: 100%;
-    max-width: 280px;
-  }
-  
-  .profile-image {
-    max-width: 220px;
-    height: 300px; /* Keep rectangular proportion */
-  }
-  
-  .profile-placeholder {
-    width: 220px;
-    height: 300px; /* Keep rectangular proportion */
-  }
-  
-  .profile-placeholder span {
-    font-size: 2.5rem;
-  }
-  
-  .about-card {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-container {
-    gap: 1.5rem;
-  }
-  
-  .profile-image {
-    max-width: 200px;
-    height: 260px; /* Keep rectangular proportion */
-  }
-  
-  .profile-placeholder {
-    width: 200px;
-    height: 260px; /* Keep rectangular proportion */
-  }
-  
-  .profile-placeholder span {
-    font-size: 2rem;
-  }
-  
-  .about-heading {
-    font-size: 1.5rem;
-  }
-  
-  .about-text {
-    font-size: 1rem;
-  }
-  
-  .social-links {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .social-button {
-    width: 200px;
-    justify-content: center;
-  }
-  
-  .projects-grid, .certificates-grid, .achievements-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Updated Hardware Projects Specific Styles */
 .hardware-image-container {
   width: 100%;
@@ -604,8 +549,103 @@ html {
   font-weight: 600;
 }
 
-/* Responsive adjustments for hardware cards */
+/* Mobile Navigation Styles */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin: 0;
+  }
+
+  .navlinks.nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navlinks li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+  }
+
+  .navlinks li:last-child {
+    border-bottom: none;
+  }
+
+  .navlinks a {
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .navlinks a:hover {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+  }
+
+  /* Other existing mobile styles */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-image-container {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .profile-image {
+    max-width: 220px;
+    height: 300px; /* Keep rectangular proportion */
+  }
+  
+  .profile-placeholder {
+    width: 220px;
+    height: 300px; /* Keep rectangular proportion */
+  }
+  
+  .profile-placeholder span {
+    font-size: 2.5rem;
+  }
+  
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+  }
+
   .hardware-image-container {
     height: 180px;
   }
@@ -620,5 +660,47 @@ html {
   
   .specs-list li {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    gap: 1.5rem;
+  }
+  
+  .profile-image {
+    max-width: 200px;
+    height: 260px; /* Keep rectangular proportion */
+  }
+  
+  .profile-placeholder {
+    width: 200px;
+    height: 260px; /* Keep rectangular proportion */
+  }
+  
+  .profile-placeholder span {
+    font-size: 2rem;
+  }
+  
+  .about-heading {
+    font-size: 1.5rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-button {
+    width: 200px;
+    justify-content: center;
+  }
+  
+  .projects-grid, .certificates-grid, .achievements-grid {
+    grid-template-columns: 1fr;
   }
 }
