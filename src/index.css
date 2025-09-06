@@ -558,6 +558,7 @@ html {
 
   .nav {
     position: relative;
+    flex-direction: row; /* Keep horizontal layout */
   }
 
   .navlinks {
@@ -578,6 +579,8 @@ html {
     transition: all 0.3s ease;
     z-index: 1000;
     margin: 0;
+    /* IMPORTANT: Ensure menu is hidden by default */
+    display: flex; /* Override the existing display: flex */
   }
 
   .navlinks.nav-open {
@@ -606,6 +609,12 @@ html {
   .navlinks a:hover {
     background: rgba(102, 126, 234, 0.1);
     color: #667eea;
+  }
+
+  /* Ensure header doesn't get cut off */
+  .site-header {
+    position: relative;
+    overflow: visible;
   }
 
   /* Other existing mobile styles */

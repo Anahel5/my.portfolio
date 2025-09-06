@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // MUST be false
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
