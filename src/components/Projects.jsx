@@ -4,21 +4,24 @@ export default function Projects() {
       <h2>Projects</h2>
       <div className="projects-grid">
         <div className="project-card">
-          <h3>Password Strength Checker</h3>
-          <p>Simple React app that scores password strength and suggests improvements.</p>
-          <span className="tech-tag">React</span>
-          <span className="tech-tag">JavaScript</span>
-        </div>
-        <div className="project-card">
-          <h3>Log Parser</h3>
-          <p>Node script that parses server logs and outputs a summary CSV.</p>
-          <span className="tech-tag">Node.js</span>
-        </div>
-        <div className="project-card">
-          <h3>Coursework: Algorithms</h3>
-          <p>Implemented sorting, searching, and AVL trees in Java; wrote runtime analyses.</p>
-          <span className="tech-tag">Java</span>
-          <span className="tech-tag">Algorithms</span>
+          <h3>MySPIM Processor Simulator</h3>
+          <p>A mini processor simulator developed using the C programming language on a Unix platform. This project demonstrates understanding of computer architecture and low-level programming concepts.</p>
+          <div className="tech-tags">
+            <span className="tech-tag">C</span>
+            <span className="tech-tag">Unix</span>
+            <span className="tech-tag">Computer Architecture</span>
+          </div>
+          <a 
+            href="https://github.com/Anahel5/Anahel-s-MySPIM" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="github-button"
+          >
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path fillRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>

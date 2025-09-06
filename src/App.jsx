@@ -2,12 +2,14 @@ import React from 'react';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import HardwareProjects from "./components/HardwareProjects";
+import Certificates from "./components/Certificates"; 
+import Achievements from "./components/Achievements"; 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
 
 function App() {
-  // Handle smooth scrolling for hash links
   React.useEffect(() => {
     const handleHashChange = () => {
       if (window.location.hash) {
@@ -18,10 +20,8 @@ function App() {
       }
     };
 
-    // Initial check
     handleHashChange();
     
-    // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
     
     return () => {
@@ -35,6 +35,9 @@ function App() {
       <main>
         <Home id="home" />
         <Projects id="projects" />
+        <HardwareProjects id="hardware-projects" />
+        <Certificates id="certificates" /> 
+        <Achievements id="achievements" />
         <Contact id="contact" />
       </main>
       <Footer />

@@ -6,6 +6,9 @@ export default function Header() {
         <ul className="navlinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#hardware-projects">Hardware</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
