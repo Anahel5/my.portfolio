@@ -27,6 +27,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: visible;
+  z-index: 100; /* Ensure header is above other content */
 }
 
 .nav {
