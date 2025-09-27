@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // MUST be false
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,6 +26,7 @@ export default function Header() {
         {/* Navigation Links */}
         <ul className={`navlinks ${isMenuOpen ? 'nav-open' : ''}`}>
           <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+          <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
           <li><a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
           <li><a href="#hardware-projects" onClick={() => setIsMenuOpen(false)}>Hardware</a></li>
           <li><a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a></li>
