@@ -5,7 +5,7 @@ export default function Projects() {
       <div className="projects-grid">
         <div className="project-card">
           <h3>ContactTube</h3>
-          <p>A full-stack contact management web application built for COP 4331 (Software Engineering). Features user authentication, CRUD operations for contacts, and search functionality. Developed using LAMP stack with REST API architecture and deployed on a remote server.</p>
+          <p>A full-stack contact management web application built on a team of four for COP 4331 (Software Engineering). Features user authentication, CRUD operations for contacts, and search functionality. Developed using LAMP stack with REST API architecture and deployed on a remote server.</p>
           <div className="tech-tags">
             <span className="tech-tag">PHP</span>
             <span className="tech-tag">MySQL</span>
@@ -13,6 +13,7 @@ export default function Projects() {
             <span className="tech-tag">HTML/CSS</span>
             <span className="tech-tag">REST API</span>
             <span className="tech-tag">SwaggerHub</span>
+            <span className="tech-tag">Teamwork</span>
           </div>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a 
