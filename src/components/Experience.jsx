@@ -9,15 +9,16 @@ export default function Experience({ id }) {
       duration: "9/2025 - Present",
       type: "Part-time",
       responsibilities: [
-        "Provide comprehensive IT support for 22-25 employees across multiple departments",
-        "Manage hardware inventory and asset tracking using Snipe-IT systems",
-        "Handle employee onboarding/offboarding including Google Workspace and Microsoft 365 account setup",
-        "Troubleshoot hardware, software, and network connectivity issues",
-        "Maintain meeting room AV equipment and implement backup solutions",
-        "Coordinate with vendors for internet, phone, and software support",
-        "Perform regular maintenance on printers, PCs, and network infrastructure"
+        "Deployed enterprise-grade EDR (Bitdefender) as a key security initiative to harden endpoint protection",
+        "Implemented multi-layer backup strategy using Google Workspace, M365, Synology Active Backup, and Cloud Sync for disaster recovery readiness",
+        "Configured network firewalls and security policies on UniFi UDM Pro for improved network segmentation and traffic control",
+        "Performed vendor management and contract negotiation resulting in operational cost savings",
+        "Centralized account management to improve access control, auditing, and compliance visibility",
+        "Built comprehensive playbooks for employee onboarding/offboarding and system restoration",
+        "Implementing hardware lifecycle and asset management workflows using Snipe-IT",
+        "Provide daily helpdesk support for 25+ employees, managing tickets for hardware, software, and network issues"
       ],
-      technologies: ["Google Workspace", "Microsoft 365", "Snipe-IT", "Windows", "macOS", "Network Troubleshooting"]
+      technologies: ["Bitdefender EDR", "UniFi UDM Pro", "Synology", "Google Workspace", "Microsoft 365", "Snipe-IT", "Disaster Recovery"]
     }
   ];
 
