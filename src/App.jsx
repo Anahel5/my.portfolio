@@ -12,7 +12,6 @@ import "./index.css";
 
 function App() {
   React.useEffect(() => {
-    // Set the main title
     document.title = "Anahel Bour | Portfolio";
     
     const handleHashChange = () => {
@@ -21,14 +20,13 @@ function App() {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
           
-          // Update title based on current section
           const sectionTitles = {
             'home': 'Anahel Bour | Portfolio',
             'experience': 'Anahel Bour | Experience',
-            'projects': 'Anahel Bour | Projects',
-            'hardware-projects': 'Anahel Bour | Hardware Projects',
             'certificates': 'Anahel Bour | Certificates',
-            'achievements': 'Anahel Bour | Achievements',
+            'projects': 'Anahel Bour | Projects',
+            'hardware-projects': 'Anahel Bour | Hardware',
+            'achievements': 'Anahel Bour | Education',
             'contact': 'Anahel Bour | Contact'
           };
           
@@ -41,24 +39,30 @@ function App() {
     };
 
     handleHashChange();
-    
     window.addEventListener('hashchange', handleHashChange);
-    
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange);
-    };
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   return (
     <div>
       <Header />
       <main>
+        {/* 1. SUMMARY */}
         <Home id="home" />
+        
+        {/* 2. EXPERIENCE */}
         <Experience id="experience" />
+        
+        {/* 3. CERTIFICATIONS (Moved Up) */}
+        <Certificates id="certificates" /> 
+        
+        {/* 4. PORTFOLIO */}
         <Projects id="projects" />
         <HardwareProjects id="hardware-projects" />
-        <Certificates id="certificates" /> 
+        
+        {/* 5. EDUCATION */}
         <Achievements id="achievements" />
+        
         <Contact id="contact" />
       </main>
       <Footer />

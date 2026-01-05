@@ -7,6 +7,8 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className="site-header">
       <nav className="nav">
@@ -23,15 +25,15 @@ export default function Header() {
           <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
 
-        {/* Navigation Links */}
+        {/* Navigation Links - REORDERED */}
         <ul className={`navlinks ${isMenuOpen ? 'nav-open' : ''}`}>
-          <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-          <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
-          <li><a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
-          <li><a href="#hardware-projects" onClick={() => setIsMenuOpen(false)}>Hardware</a></li>
-          <li><a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a></li>
-          <li><a href="#certificates" onClick={() => setIsMenuOpen(false)}>Certificates</a></li>
-          <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+          <li><a href="#certificates" onClick={closeMenu}>Certificates</a></li>
+          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li><a href="#hardware-projects" onClick={closeMenu}>Hardware</a></li>
+          <li><a href="#achievements" onClick={closeMenu}>Education</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </nav>
     </header>
