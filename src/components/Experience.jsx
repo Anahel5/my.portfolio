@@ -4,7 +4,7 @@ export default function Experience({ id }) {
   const experiences = [
     {
       title: "Cybersecurity & IT Specialist",
-      company: "Kramer America Inc.",
+      company: "Kramer America Inc. (Smartliner USA)",
       location: "Apopka, FL",
       duration: "09/2025 - Present",
       type: "Part-time",
