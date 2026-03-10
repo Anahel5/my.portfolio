@@ -3,22 +3,22 @@ import React from 'react';
 export default function Experience({ id }) {
   const experiences = [
     {
-      title: "IT Support Specialist",
-      company: "Smartliner USA (Kramer America Inc)",
+      title: "Cybersecurity & IT Specialist",
+      company: "Kramer America Inc.",
       location: "Apopka, FL",
-      duration: "9/2025 - Present",
+      duration: "09/2025 - Present",
       type: "Part-time",
       responsibilities: [
-        "Deployed enterprise-grade EDR (Bitdefender) as a key security initiative to harden endpoint protection",
-        "Implemented multi-layer backup strategy using Google Workspace, M365, Synology Active Backup, and Cloud Sync for disaster recovery readiness",
-        "Configured network firewalls and security policies on UniFi UDM Pro for improved network segmentation and traffic control",
-        "Performed vendor management and contract negotiation resulting in operational cost savings",
-        "Centralized account management to improve access control, auditing, and compliance visibility",
-        "Built comprehensive playbooks for employee onboarding/offboarding and system restoration",
-        "Implementing hardware lifecycle and asset management workflows using Snipe-IT",
-        "Provide daily helpdesk support for 25+ employees, managing tickets for hardware, software, and network issues"
+        "Orchestrated company-wide migration from Google Workspace to Microsoft 365, managing 1TB+ of R&D data and 50+ user mailboxes.",
+        "Configured Microsoft Entra ID (Azure AD) for centralized identity management and implemented multi-factor authentication (MFA).",
+        "Deployed enterprise-grade EDR (Bitdefender) and configured security policies to harden endpoint posture.",
+        "Engineered a multi-layer backup strategy leveraging M365 and Synology Active Backup for disaster recovery readiness.",
+        "Configured UniFi UDM Pro firewalls, implementing network segmentation and strict security policies.",
+        "Managed DNS configuration (SPF, DKIM, DMARC) across multiple providers to ensure mail deliverability and prevent spoofing.",
+        "Implemented asset management lifecycle tracking (Snipe-IT) to optimize hardware utilization and inventory visibility.",
+        "Developed standardized playbooks (SOPs) for onboarding/offboarding and system restoration, improving process efficiency."
       ],
-      technologies: ["Bitdefender EDR", "UniFi UDM Pro", "Synology", "Google Workspace", "Microsoft 365", "Snipe-IT", "Disaster Recovery"]
+      technologies: ["Microsoft 365", "Entra ID", "Bitdefender EDR", "UniFi UDM Pro", "Synology", "Snipe-IT", "DNS Security"]
     }
   ];
 
@@ -45,7 +45,7 @@ export default function Experience({ id }) {
             </div>
             
             <div className="responsibilities">
-              <h4>Key Responsibilities:</h4>
+              <h4>Key Accomplishments:</h4>
               <ul className="responsibilities-list">
                 {exp.responsibilities.map((responsibility, idx) => (
                   <li key={idx}>{responsibility}</li>

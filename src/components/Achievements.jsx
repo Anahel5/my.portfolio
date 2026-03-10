@@ -1,57 +1,54 @@
+import React from 'react';
+
 export default function Achievements() {
   return (
     <section id="achievements" className="section">
-      <h2>Achievements</h2>
+      <h2>Achievements & Education</h2>
       <div className="projects-grid">
         <div className="achievement-card">
+          <div className="achievement-badge">Passed</div>
           <h3>UCF Foundation Exam</h3>
-          <p>Successfully passed the Computer Science Foundation Exam at UCF.</p>
+          <p>Successfully passed the Computer Science Foundation Exam (COT 3960) at UCF, a major milestone demonstrating mastery of algorithms and discrete structures.</p>
         </div>
+
         <div className="achievement-card">
           <h3>1st Place - Horse Plinko Cyber Challenge</h3>
-          <p>Participated on team "Enumclaw Engineers" earning 1st place in the Horse Plinko Cyber Challenge Season 1 competition hosted by Hack@UCF.</p>
+          <p>Participated on team "Enumclaw Engineers" earning 1st place in the Horse Plinko Cyber Challenge Season 1 hosted by Hack@UCF.</p>
           <p className="achievement-desc">
-            Horse Plinko is a beginner-friendly cyber defense competition focused on practical cybersecurity skills 
-            including Linux/Windows system administration, SIEM and firewall management, and industry best practices.
+            Focused on practical skills including Linux/Windows administration, SIEM management, and firewall defense.
           </p>
           <a 
-            href="https://www.linkedin.com/posts/collegiate-cyber-defense-club-at-ucf_congratulations-to-the-winners-of-horse-plinko-ugcPost-7118461881735880705-Dz_G?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAECytyAB9RpmjldXsP-uRYq31tMeiEE8huE"
+            href="https://www.linkedin.com/posts/collegiate-cyber-defense-club-at-ucf_congratulations-to-the-winners-of-horse-plinko-ugcPost-7118461881735880705-Dz_G"
             target="_blank"
             rel="noopener noreferrer"
             className="linkedin-post-button"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
-            View LinkedIn Post
+            View Results
           </a>
-          <div className="tech-tags">
-            <span className="tech-tag">Cybersecurity</span>
-            <span className="tech-tag">Team Competition</span>
-            <span className="tech-tag">Defense</span>
-            <span className="tech-tag">Linux</span>
-            <span className="tech-tag">Firewall Management</span>
-            <span className="tech-tag">SIEM Tools</span>
-          </div>
         </div>
+
         <div className="achievement-card">
-          <h3>Relevant Coursework</h3>
-          <p>Completed advanced coursework including:</p>
+          <h3>Advanced Coursework</h3>
+          <p>Currently pursuing B.S. in Computer Science (Expected 2027) with a focus on Security:</p>
           <ul className="coursework-list">
-            <li>Computer Science I & II</li>
-            <li>Object-Oriented Programming</li>
-            <li>Security in Computing</li>
-            <li>Discrete Structures</li>
-            <li>Systems Software</li>
+            <li><strong>Secure Operating Systems & Networks</strong></li>
+            <li><strong>Security in Computing</strong></li>
+            <li><strong>Systems Software</strong></li>
+            <li>Computer Science I & II (Data Structures)</li>
             <li>Computer Logic & Organization</li>
             <li>Calculus I, II, & III</li>
-            <li>Physics with Calculus</li>
-            <li>Statistical Methods</li>
           </ul>
         </div>
+
         <div className="achievement-card">
-          <h3>Academic Performance</h3>
-          <p>Maintained a <strong>3.3 GPA</strong> while completing rigorous Computer Science curriculum at UCF.</p>
+          <h3>Certifications</h3>
+          <div className="tech-tags mt-2">
+            <span className="tech-tag border border-blue-400">CompTIA Security+</span>
+            <span className="tech-tag border border-blue-400">Google Cybersecurity Professional</span>
+          </div>
         </div>
       </div>
     </section>

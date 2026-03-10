@@ -1,11 +1,16 @@
+import React from 'react';
+
 export default function Home() {
   const handleImageError = (e) => {
     e.target.style.display = 'none';
-    document.querySelector('.profile-image-container').innerHTML = `
-      <div class="profile-placeholder">
-        <span>AB</span>
-      </div>
-    `;
+    const container = document.querySelector('.profile-image-container');
+    if (container) {
+      container.innerHTML = `
+        <div class="profile-placeholder">
+          <span>AB</span>
+        </div>
+      `;
+    }
   };
 
   return (
@@ -26,21 +31,22 @@ export default function Home() {
             <h3 className="about-heading">Hi, I'm Anahel 👋</h3>
             
             <p className="about-text">
-              Computer Science student at the University of Central Florida with a strong foundation 
-              in <strong>C, Python, and Java</strong>. Currently pursuing expertise in cybersecurity through coursework 
-              in Security in Computing and completion of the 
-              <strong> Google Cybersecurity Professional Certificate</strong>. Skilled in <strong>Linux, 
-              SQL, Wireshark, and SIEM platforms</strong>, with experience in applying 
-              NIST frameworks and security controls. Passionate about problem-solving and eager to 
-              contribute to cybersecurity teams through incident response, threat modeling, and security 
-              hardening.
+              Aspiring Cybersecurity Specialist and Computer Science student at UCF with hands-on experience in <strong>enterprise IT operations</strong>. 
+              Currently leading a large-scale infrastructure migration to <strong>Microsoft 365</strong> at Kramer America Inc, 
+              where I manage <strong>Entra ID governance</strong>, <strong>Bitdefender EDR</strong>, and <strong>UniFi network security</strong>. 
+            </p>
+            <p className="about-text">
+              With a strong foundation in C, Python, and Java, I combine my academic studies in 
+              <strong> Secure Operating Systems</strong> with professional certifications like 
+              <strong> CompTIA Security+</strong>. I am passionate about engineering resilient 
+              security architectures and implementing NIST-aligned controls.
             </p>
 
-            <div className="tags-center">
-              <span className="tech-tag">Cybersecurity</span>
-              <span className="tech-tag">Programming</span>
-              <span className="tech-tag">Problem-Solving</span>
-              <span className="tech-tag">Software Development</span>
+            <div className="tags-center mt-4">
+              <span className="tech-tag">Identity Management</span>
+              <span className="tech-tag">Network Security</span>
+              <span className="tech-tag">Cloud Migration</span>
+              <span className="tech-tag">Incident Response</span>
             </div>
           </div>
         </div>
