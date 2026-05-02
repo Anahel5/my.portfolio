@@ -8,9 +8,9 @@ export default function Education() {
         
         {/* Academic Honors */}
         <div className="achievement-card">
-          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm">Academic Excellence</div>
+          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm"></div>
           <h3>UCF Honors & GPA</h3>
-          <p className="mb-2"><strong>Cumulative GPA: 3.56</strong></p>
+          <p className="mb-2">Cumulative GPA: 3.56</p>
           <ul className="coursework-list">
             <li><strong>President's Honor Roll</strong> (Fall 2023)</li>
             <li><strong>Dean's List</strong> (Fall 2024)</li>
