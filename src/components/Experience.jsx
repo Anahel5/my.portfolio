@@ -4,7 +4,7 @@ export default function Experience({ id }) {
   const experiences = [
     {
       title: "Cybersecurity & IT Specialist",
-      company: "Kramer America Inc. (Smartliner USA)",
+      company: "Kramer America LLC (Smartliner USA)",
       location: "Apopka, FL",
       duration: "09/2025 - Present",
       type: "Part-time",
@@ -24,7 +24,7 @@ export default function Experience({ id }) {
 
   return (
     <section id={id} className="section">
-      <h2>Professional Experience</h2>
+      <h2>Experience</h2>
       <div className="experience-container">
         {experiences.map((exp, index) => (
           <div key={index} className="experience-card">

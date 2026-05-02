@@ -5,7 +5,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import HardwareProjects from "./components/HardwareProjects";
 import Certificates from "./components/Certificates"; 
-import Achievements from "./components/Achievements"; 
+import Education from "./components/Education"; 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
@@ -26,7 +26,7 @@ function App() {
             'certificates': 'Anahel Bour | Certificates',
             'projects': 'Anahel Bour | Projects',
             'hardware-projects': 'Anahel Bour | Hardware',
-            'achievements': 'Anahel Bour | Education',
+            'education': 'Anahel Bour | Education',
             'contact': 'Anahel Bour | Contact'
           };
           
@@ -61,7 +61,7 @@ function App() {
         <HardwareProjects id="hardware-projects" />
         
         {/* 5. EDUCATION */}
-        <Achievements id="achievements" />
+        <Education id="education" />
         
         <Contact id="contact" />
       </main>

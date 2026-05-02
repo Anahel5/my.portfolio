@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Achievements() {
+export default function Education() {
   return (
-    <section id="achievements" className="section">
-      <h2>Achievements & Education</h2>
+    <section id="education" className="section">
+      <h2>Education</h2>
       <div className="projects-grid">
         {/* UCF Milestones */}
         <div className="achievement-card">
-          <div className="achievement-badge">Passed</div>
+          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm">Passed</div>
           <h3>UCF Foundation Exam</h3>
           <p>Successfully passed the Computer Science Foundation Exam (COT 3960) at UCF, a major milestone demonstrating mastery of algorithms and discrete structures.</p>
         </div>

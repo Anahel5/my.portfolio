@@ -32,7 +32,7 @@ export default function Home() {
             
             <p className="about-text">
               Aspiring Cybersecurity Specialist and Computer Science student at UCF with hands-on experience in <strong>enterprise IT operations</strong>. 
-              Currently leading a large-scale infrastructure migration to <strong>Microsoft 365</strong> at Kramer America Inc, 
+              Currently leading a large-scale infrastructure migration to <strong>Microsoft 365</strong> at Kramer America LLC, 
               where I manage <strong>Entra ID governance</strong>, <strong>Bitdefender EDR</strong>, and <strong>UniFi network security</strong>. 
             </p>
             <p className="about-text">

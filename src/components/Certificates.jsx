@@ -3,7 +3,7 @@ import React from 'react';
 export default function Certificates() {
   return (
     <section id="certificates" className="section">
-      <h2>Certificates & Badges</h2>
+      <h2>Certificates</h2>
       <div className="projects-grid">
         
         {/* CompTIA Security+ */}
@@ -15,7 +15,8 @@ export default function Certificates() {
             recommend and implement appropriate security solutions, and monitor and secure hybrid environments.
           </p>
           <div className="cert-meta" style={{ marginBottom: '1rem', fontSize: '0.9rem', color: '#666' }}>
-            <span>Issued: Jan 2026</span> • <span>Code: f8c1be44109a4840a89cdbba2e7aff82</span>
+            <div style={{ marginBottom: '4px' }}><strong>Issued:</strong> Jan 2026</div>
+            <div><strong>Code:</strong> f8c1be44109a4840a89cdbba2e7aff82</div>
           </div>
           <a 
             href="http://verify.CompTIA.org" 
@@ -23,7 +24,7 @@ export default function Certificates() {
             rel="noreferrer"
             className="cert-link"
           >
-            Verify Credential
+            View Credential
           </a>
         </div>
 
@@ -44,7 +45,7 @@ export default function Certificates() {
             rel="noreferrer"
             className="cert-link"
           >
-            View Credly Badge
+            View Credential
           </a>
         </div>
 
