@@ -1,10 +1,12 @@
+import React from 'react';
+
 export default function Certificates() {
   return (
     <section id="certificates" className="section">
-      <h2>Certificates</h2>
+      <h2>Certificates & Badges</h2>
       <div className="projects-grid">
         
-        {/* NEW CERTIFICATE: CompTIA Security+ */}
+        {/* CompTIA Security+ */}
         <div className="cert-card">
           <h3>CompTIA Security+</h3>
           <p>
@@ -25,7 +27,28 @@ export default function Certificates() {
           </a>
         </div>
 
-        {/* EXISTING CERTIFICATE: Google Cybersecurity */}
+        {/* NEW AWS Academy Graduate Badge */}
+        <div className="cert-card">
+          <h3>AWS Academy Graduate - Cloud Security Foundations</h3>
+          <p>
+            Demonstrates knowledge of AWS cloud security concepts, including identity and access management, 
+            data encryption, and network security. Validates understanding of the AWS Shared Responsibility Model 
+            and various compliance frameworks.
+          </p>
+          <div className="cert-meta" style={{ marginBottom: '1rem', fontSize: '0.9rem', color: '#666' }}>
+            <span>Issued: 2026</span>
+          </div>
+          <a 
+            href="https://www.credly.com/badges/bd981733-3a99-4021-92b6-299c363c4402"
+            target="_blank" 
+            rel="noreferrer"
+            className="cert-link"
+          >
+            View Credly Badge
+          </a>
+        </div>
+
+        {/* Google Cybersecurity */}
         <div className="cert-card">
           <h3>Google Cybersecurity Professional Certificate</h3>
           <p>
