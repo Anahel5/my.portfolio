@@ -5,6 +5,18 @@ export default function Education() {
     <section id="education" className="section">
       <h2>Education</h2>
       <div className="projects-grid">
+        
+        {/* Academic Honors */}
+        <div className="achievement-card">
+          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm">Academic Excellence</div>
+          <h3>UCF Honors & GPA</h3>
+          <p className="mb-2"><strong>Cumulative GPA: 3.56</strong></p>
+          <ul className="coursework-list">
+            <li><strong>President's Honor Roll</strong> (Fall 2023)</li>
+            <li><strong>Dean's List</strong> (Fall 2024)</li>
+          </ul>
+        </div>
+
         {/* UCF Milestones */}
         <div className="achievement-card">
           <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm"><strong>Passed</strong></div>
@@ -14,7 +26,7 @@ export default function Education() {
 
         {/* Competition Wins */}
         <div className="achievement-card">
-          <div className="achievement-badge"><strong>1st Place</strong></div>
+          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm"><strong>1st Place</strong></div>
           <h3>Horse Plinko Cyber Challenge</h3>
           <p>Participated on team "Enumclaw Engineers" earning 1st place in the Horse Plinko Cyber Challenge Season 1 hosted by Hack@UCF.</p>
           <p className="achievement-desc">
@@ -33,16 +45,17 @@ export default function Education() {
           </a>
         </div>
 
-        {/* Coursework */}
+        {/* Specialized Coursework */}
         <div className="achievement-card">
           <h3>Advanced Coursework</h3>
-          <p>B.S. in Computer Science (Expected 2027) with focus on security:</p>
+          <p>B.S. in Computer Science (Expected 2027) with a focus on security:</p>
           <ul className="coursework-list">
-            <li><strong>Secure Operating Systems & Networks</strong></li>
-            <li><strong>Security in Computing</strong></li>
-            <li><strong>Systems Software</strong></li>
-            <li>Computer Science I & II (Data Structures)</li>
-            <li>Computer Logic & Organization</li>
+            <li><strong>Secure Cloud Computing</strong> (CIS 4524)</li>
+            <li><strong>Secure Software Development</strong> (CIS 4615)</li>
+            <li><strong>Secure Operating Systems & Networks</strong> (CIS 4361)</li>
+            <li><strong>Security in Computing</strong> (CIS 3360)</li>
+            <li>Computer Science I & II (Data Structures/Algorithms)</li>
+            <li>Linear & Matrix Algebra</li>
             <li>Calculus I, II, & III</li>
           </ul>
         </div>
@@ -56,6 +69,7 @@ export default function Education() {
             <span className="tech-tag border border-blue-400">Google Cybersecurity Professional</span>
           </div>
         </div>
+
       </div>
     </section>
   );
