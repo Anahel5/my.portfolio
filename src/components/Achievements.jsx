@@ -5,14 +5,17 @@ export default function Achievements() {
     <section id="achievements" className="section">
       <h2>Achievements & Education</h2>
       <div className="projects-grid">
+        {/* UCF Milestones */}
         <div className="achievement-card">
           <div className="achievement-badge">Passed</div>
           <h3>UCF Foundation Exam</h3>
           <p>Successfully passed the Computer Science Foundation Exam (COT 3960) at UCF, a major milestone demonstrating mastery of algorithms and discrete structures.</p>
         </div>
 
+        {/* Competition Wins */}
         <div className="achievement-card">
-          <h3>1st Place - Horse Plinko Cyber Challenge</h3>
+          <div className="achievement-badge">1st Place</div>
+          <h3>Horse Plinko Cyber Challenge</h3>
           <p>Participated on team "Enumclaw Engineers" earning 1st place in the Horse Plinko Cyber Challenge Season 1 hosted by Hack@UCF.</p>
           <p className="achievement-desc">
             Focused on practical skills including Linux/Windows administration, SIEM management, and firewall defense.
@@ -30,9 +33,10 @@ export default function Achievements() {
           </a>
         </div>
 
+        {/* Coursework */}
         <div className="achievement-card">
           <h3>Advanced Coursework</h3>
-          <p>Currently pursuing B.S. in Computer Science (Expected 2027) with a focus on Security:</p>
+          <p>B.S. in Computer Science (Expected 2027) with focus on security:</p>
           <ul className="coursework-list">
             <li><strong>Secure Operating Systems & Networks</strong></li>
             <li><strong>Security in Computing</strong></li>
@@ -43,10 +47,12 @@ export default function Achievements() {
           </ul>
         </div>
 
+        {/* Quick-view Certifications */}
         <div className="achievement-card">
           <h3>Certifications</h3>
           <div className="tech-tags mt-2">
             <span className="tech-tag border border-blue-400">CompTIA Security+</span>
+            <span className="tech-tag border border-orange-500 bg-orange-50">AWS Academy Graduate</span>
             <span className="tech-tag border border-blue-400">Google Cybersecurity Professional</span>
           </div>
         </div>
