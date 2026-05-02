@@ -7,14 +7,14 @@ export default function Education() {
       <div className="projects-grid">
         {/* UCF Milestones */}
         <div className="achievement-card">
-          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm">Passed</div>
+          <div className="achievement-badge bg-blue-600 text-white font-bold px-3 py-1 rounded-full inline-block mb-3 text-sm"><strong>Passed</strong></div>
           <h3>UCF Foundation Exam</h3>
           <p>Successfully passed the Computer Science Foundation Exam (COT 3960) at UCF, a major milestone demonstrating mastery of algorithms and discrete structures.</p>
         </div>
 
         {/* Competition Wins */}
         <div className="achievement-card">
-          <div className="achievement-badge">1st Place</div>
+          <div className="achievement-badge"><strong>1st Place</strong></div>
           <h3>Horse Plinko Cyber Challenge</h3>
           <p>Participated on team "Enumclaw Engineers" earning 1st place in the Horse Plinko Cyber Challenge Season 1 hosted by Hack@UCF.</p>
           <p className="achievement-desc">

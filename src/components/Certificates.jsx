@@ -37,7 +37,7 @@ export default function Certificates() {
             and various compliance frameworks.
           </p>
           <div className="cert-meta" style={{ marginBottom: '1rem', fontSize: '0.9rem', color: '#666' }}>
-            <span>Issued: 2026</span>
+            <strong>Issued:</strong> May 2026
           </div>
           <a 
             href="https://www.credly.com/badges/bd981733-3a99-4021-92b6-299c363c4402"
@@ -56,7 +56,10 @@ export default function Certificates() {
             Completed Google’s rigorous certificate program covering threat detection, 
             incident response, and security foundations.
           </p>
-          <a 
+          <div className="cert-meta" style={{ marginBottom: '1rem', fontSize: '0.9rem', color: '#666' }}>
+            <strong>Issued:</strong> Aug 2025
+          </div>
+          <a
             href="https://www.coursera.org/account/accomplishments/specialization/certificate/IISQSKL56UTB"
             target="_blank" 
             rel="noreferrer"
@@ -65,7 +68,6 @@ export default function Certificates() {
             View Credential
           </a>
         </div>
-
       </div>
     </section>
   );
